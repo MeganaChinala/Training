@@ -9,23 +9,27 @@
   </head>
   <body>
     <h1>Basic Template</h1>
+    <br>
     <h2> Paragraphs </h2>
       <p>
         Here, I can write paragraphs. Any amount of information, but it's solely text.
         Nothing will be styled unless I use CSS to change the font, the font size, color,
         etc.
       </p>
+      <br>
     <h2> Headings </h2>
       <p>
         I can have different types of headings. The Title of this webpage is with h1 heading.
         This is the largest size. We can go up to h6 heading sizes.
       </p>
+      <br>
     <h2> Bold/Italics </h2>
       <p>
         we use "strong" to <strong> bold </strong> words. We can also italicize in two ways.
         One way is to use the <i> i element tag </i> or the <em> em </em> tag. Em gives
         emphasis and shows the urgency of the italicized word.
       </p>
+      <br>
     <h2> Lists </h2>
       <p>
         Lists can be ordered and unordered. An ordered list will produced list items with numbers
@@ -41,19 +45,53 @@
             <li> egg   </li>
           </ol>
       </p>
+      <br>
       <h2> Quotes </h2>
-      <blockquote>
-        <p>
-          We can also have things called blockquotes. This would surround the
-          multiple lines of text that are quotes (even if held in paragraph format).
+        <blockquote>
+          <p>
+            We can also have things called blockquotes. This would surround the
+            multiple lines of text that are quotes (even if held in paragraph format).
 
-          For example, this paragraph is assumed to be a large block quote and we will cite
-          it using the cite tag.
-          <cite> Megana C </cite>
-          The q attribute will place <q>quote </q> marks around your regular quotes.
-          Additionally if your  paragraph element has a language attribute attached, the q element will
-          use the respective syntax for the quotation marks.
-        </p> 
-          </blockquote>
+            For example, this paragraph is assumed to be a large block quote and we will cite
+            it using the cite tag.
+            <br>
+              <cite> Megana C </cite>
+            <br>
+            The q attribute will place <q>quote </q> marks around your regular quotes.
+            Additionally if your  paragraph element has a language attribute attached, the q element will
+            use the respective syntax for the quotation marks.
+          </p>
+        </blockquote>
+        <br>
+      <h2> Code, pre, br </h2>
+        <p>
+          to write code within the text use the <q> code </q> element to stylize
+          the code to look different than other text. If we are writing actual html code
+          that might be recognized we would use special characters to denote that we aren't
+          trying to create an element tag but solely print it to screen.
+            <code>
+              <br>
+              <br>
+              random code block. Trying to show i want h5 used by using this element tag:
+              &lt;h4 &gt;. The less than abbr and greater than abbr followed by a semicolon and starting
+              with & denotes that we only want to print those characters.
+            </code>
+          <br>
+          <br>
+          instead of adding another paragraph, I added a line break. We can also use
+          pre tag to preserve the spaces and indents.
+          </p>
+        <br>
+      <h2> Superscript, Subscript, and Small text </h2>
+        <p>
+          superscript = <code> &lt;sup&gt; </code>
+          <br>
+          Example = r^2 = r<sup>2</sup>
+          <br>
+          subscript = <code> &lt;sub&gt; </code>
+          <br>
+          Example = H20 = H<sub>2</sub>O
+          small (denotes little prominence) = <code> &lt;small&gt; </code>
+        </p>
   </body>
 </html>
