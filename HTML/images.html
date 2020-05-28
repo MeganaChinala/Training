@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Chapter 5: Images and Graphics </title>
+  </head>
+  <body>
+    <h1> Chapter 5: Images and Graphics </h1>
+    <br>
+    <h2> Images </h2>
+    <p>
+      Images element have 4 necessary attributes
+      <ol>
+        <li> src = "Image.jpg"</li>
+        <li> alt = "describe picture"</li>
+        <li> width = "400" </li>
+        <li> height = "400" </li>
+      </ol>
+      <img src="flower.jpeg" alt="lotus" width="400" height="400">
+    </p>
+    <br>
+    <h2> Image File/Format </h2>
+      <p>
+        Must be a file that the browser can easily access and understand.
+        Goal is to have highest quality with smallest size of file.
+        <br>
+        Types of images
+        <br>
+        <ul>
+          <li> <strong> Gif </strong> </li>
+          <li> <strong> SVG (scalable vector graphic)</strong> - logos, icons </li>
+          <li> <strong> JPG </strong> - compressing photographs</li>
+          <li> <strong> PNG </strong> - sometimes better than GIF and JPG at compression </li>
+        </ul>
+      </p>
+      <br>
+    <h2> Responsive Image </h2>
+      <p>
+        Image size will change based upon the screen size. Different files can be
+        delivered based upon the size of the hardware. An option is to save multiple
+        resolutions of the same image and tell the browser to pick the respective image
+        according to the criteria given. Keep the same image tag code as before and add
+          attribute "srcset" and list all the possible images available for browser to choose from.
+          <br>
+          <br>
+          <code>
+            <strong>&lt;img src="flower.jpeg" alt="lotus" width="400" height="400"
+            srcset = "absolute or relative paths of remaining pics, each followed by commas"&gt; </strong>
+          </code>
+      </p>
+      <br>
+      <h3> Responsive Width </h3>
+        <p>
+          Add a sizes attribute and allow browser to choose the image based upon width of hardware
+          <code>
+            <strong>&lt;img src="flower.jpeg" alt="lotus" width="400" height="400"
+            srcset = "absolute or relative paths of remaining pics, each followed by commas"
+            sizes = "(max-width: 480 px) 240 px",
+                      (max-width: 960 px) 480p"&gt;
+                    </strong>
+
+          </code>
+        </p>
+  </body>
